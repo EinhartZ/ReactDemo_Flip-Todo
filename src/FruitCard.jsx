@@ -45,13 +45,9 @@ export default function FruitCard({fruit, onDelete, flippedProps}) {
     <Card className={classes.root} {...flippedProps}>
       <CardHeader
         title={fruit.name}
-        // subheader="September 14, 2016"
+        subheader="is good for you"
       />
-      <CardMedia
-        className={classes.media}
-        image="/logo192.png"
-        title="Paella dish"
-      />
+
       <CardContent>
 
       </CardContent>
