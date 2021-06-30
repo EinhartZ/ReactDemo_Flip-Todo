@@ -5,7 +5,7 @@ import { Flipper, Flipped } from 'react-flip-toolkit';
 import Grid from '@material-ui/core/Grid';
 import FruitCard from './FruitCard';
 
-import { Button, ButtonGroup, Paper, Divider, InputBase, TextField,} from '@material-ui/core';
+import { Button, ButtonGroup, TextField,} from '@material-ui/core';
 
 import ShuffleIcon from '@material-ui/icons/Shuffle';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
@@ -108,7 +108,7 @@ function App() {
       </form>
 
       <Flipper flipKey={flipFlag}>
-      <Grid container spacing = {1}>
+      <Grid container direction="row" justify="center">
         {fruits.map(fruit =>
           (
             <Flipped key = {fruit.name} flipId = {fruit.name} stagger>
